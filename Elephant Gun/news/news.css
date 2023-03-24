@@ -1,0 +1,93 @@
+body {
+    margin: 0 auto;
+}
+
+header{
+    background-image: url(bg.jpg);
+}
+
+header h1 {
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 7px 7px 15px black;
+    display: inline-block;
+    margin: 1% auto;
+    padding-left: 35%;
+}
+
+header p {
+    font-family: 'Cookie', cursive;
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 15px;
+    float: unset;
+    margin: -2% 35% 2% 47%;
+    padding-bottom: 2%;
+    color: yellow;
+    text-shadow: 2px 2px black;
+
+}
+
+footer {
+    background-image: url(bg.jpg)
+}
+
+.elefante {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    display: inline-block;
+    margin: 1% 43%;
+    box-shadow: 15px 15px 10px black;
+    border-radius: 150px;
+}
+
+.menu {
+    font-family: 'Cookie', cursive;
+    font-family: 'RocknRoll One', sans-serif;
+    display: inline-block;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 9%;
+    font-weight: lighter;
+    margin-bottom: 3%;
+}
+
+table {
+    text-indent: 300px;;
+}
+
+a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    text-shadow: 2px 2px 1px grey;
+}
+
+a:hover {
+    font-size: 32px;
+    color: rgb(179, 179, 18);
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(199, 120, 252);
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+    font-size: 75px;
+}
+
+.news {
+    margin-left: 8%;
+}
+
+.news1, .news2, .news3, .news4, .news5, .news6, .news7, .news8, .news9, .news10, .news11, .news12 {
+    background-color: grey;
+    margin: 1% 1%;
+    padding: 12% 10%;
+    display: inline-block;
+}
