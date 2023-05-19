@@ -1,0 +1,971 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+header {
+	background-color: black;
+	color: white;
+	height: 100px;
+	z-index:1;
+}
+
+
+/*DIVS FIXAS*//*DIVS FIXAS*//*DIVS FIXAS*//*DIVS FIXAS*/
+.effect {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+	z-index: 4;
+}
+
+.effect-darker {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 5;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.clear {
+	clear:both;
+}
+
+
+
+/*SESSÃO CABEÇALHO*//*SESSÃO CABEÇALHO*//*SESSÃO CABEÇALHO*//*SESSÃO CABEÇALHO*/
+
+.brand {
+	max-width: 200px;
+	max-height: 200px;
+	text-align: center;
+	text-transform: uppercase;
+	float: left;
+	position: relative;
+	top: 15px;
+	border: 1px solid #aaa;
+	border-radius: 10px;
+	padding: 5px 10px;
+}
+
+.menu {
+	float: right;
+}
+
+.menu ul {
+	position: relative;
+	top: 40px;
+	left: 20px;
+}
+
+.menu ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding-right: 45px;
+	border-right: 1px solid white;
+
+}
+
+.menu ul li a {
+	text-decoration: none;
+	font-weight: lighter;
+	color: white;
+}
+
+.menu ul li:hover {
+	background-color: #4e4e4e;	
+}
+
+.menu-mobile {
+	display: none;
+	width: 40px;
+	height: 30px;
+	float: right;
+	background-image: url(../images/menu.png);
+	background-size: 100% 100%;
+	margin-top: 7%;
+	cursor: pointer;
+}
+
+.menu-mobile ul{
+	position: absolute;
+	text-align: center;
+	top: 100px;
+	left: 0px;
+	background-color: #ccc;
+	width: 100%;
+	display: none;
+	z-index: 99;
+} 
+
+.menu-mobile ul li {
+	padding: 10px 0;
+	list-style-type: none;
+	text-align: center;
+	border-bottom: 1px solid white;
+}
+
+.menu-mobile ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+}
+
+/*FIM DA SESSÃO CABEÇALHO*//*FIM DA SESSÃO CABEÇALHO*//*FIM DA SESSÃO CABEÇALHO*/
+
+
+
+/*SESSÃO PRESENTATION*//*SESSÃO PRESENTATION*//*SESSÃO PRESENTATION*/
+.presentation figure {
+	height: 750px;
+	width: 100%	;
+	padding: 10px 10px;
+	background-image: url(../images/wallpaper.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	filter: grayscale(50%);
+	z-index:2;
+}
+
+.call {
+	width: 550px;
+	position: relative;
+	top: 40%;
+	border: 1px solid white;
+	box-shadow: 3px 3px 15px black;
+	background-color: rgba(0, 0, 0, 0.4);
+	text-align: center;
+	padding: 10px 2%;
+}
+
+.call h2 {
+	text-transform: uppercase;
+	font-weight: lighter;
+	color: white;
+	font-size: 60px;
+}
+
+.call p {
+	text-transform: uppercase;
+	font-weight: lighter;
+	color: white;
+	font-size: 15px;
+}
+
+/*FIM DA SESSÃO PRESENTATION*//*FIM DA SESSÃO PRESENTATION*//*FIM DA SESSÃO PRESENTATION*/
+
+
+
+
+/*SESSÃO SERVIÇOS*//*SESSÃO SERVIÇOS*//*SESSÃO SERVIÇOS*//*SESSÃO SERVIÇOS*/
+
+.circle {
+	height: 85px;
+}
+
+
+.circle-obj {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background-color: black;
+	border: 3px solid white;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	top: -100px;
+}
+
+.circle-obj h2 {
+	color: white;
+	text-transform: uppercase;
+	font-weight: lighter;
+	margin-top: 75px;
+}
+
+.circle-obj i {
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+.servicos {
+	max-width: 1575px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.box {
+	width: 500px;
+	height: 330px;
+	border: 1px solid grey;
+	box-shadow: 3px 3px 10px grey;
+	margin: 2% 12px;
+	display: inline-block;
+}
+
+figure {
+	background-image: url(../images/wallpaper2.jpeg);
+	background-size:cover;
+	background-position: center;
+	padding-top: 200px;
+}
+
+.box-text {
+	padding: 10px 2%;
+}
+
+.box-text h2 {
+	margin-bottom: 7px;
+}
+
+.box-text span {
+	text-decoration: underline;
+	color: rgb(158, 158, 248);
+	position: relative;
+	bottom: 10px;
+	left: 350px;
+	cursor: pointer;
+}
+
+/*FIM DASESSÃO SERVIÇOS*//* FIM DA SESSÃO SERVIÇOS*//*FIM DA SESSÃO SERVIÇOS*/
+
+
+
+
+
+/*SESSÃO PRODUTOS*//*SESSÃO PRODUTOS*//*SESSÃO PRODUTOS*//*SESSÃO PRODUTOS*/
+
+.produtos {
+	width: 100%;
+	height: 600px;
+	background-image: url(../images/wooden-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	z-index: 3;
+}
+
+.produtos h1 {
+	padding-top: 20px;
+	font-size: 50px;
+	text-transform: uppercase;
+	font-weight: lighter;
+	text-align: center;
+	color: rgb(63, 63, 63);
+}
+
+.produtos p {
+	text-transform: uppercase;
+	font-weight: lighter;
+	text-align: center;
+	color: rgb(63, 63, 63);
+	font-size: 12px;
+}
+
+.box-slider {
+	text-align: center;
+	margin: 45px auto;
+	align-items: top;
+}
+
+.slider-wraper {
+	height: 400px;
+	align-items: top;
+	margin-top: 7%;
+}
+
+.slider-images {
+	width: 500px;
+	height: 400px;
+	position: relative;
+	bottom: 99.35%;
+	display: inline-block;
+	border: 3px solid white;
+	align-items: top;
+}
+
+.slider-images img {
+	width: 494px;
+	height: 393px;
+	position: absolute;
+	left: 0;
+
+}
+.arrows {
+	position: relative;
+	top: 50%;
+}
+
+.arrows i:nth-of-type(1){
+	font-size: 20px;
+	opacity: 0.9;
+	color: rgb(88, 88, 88);
+	border-radius: 2px;
+	position: relative;
+	right: 215px;
+	background-color: rgba(255, 255, 255, 0.7);
+	cursor: pointer;
+
+}
+
+.arrows i:nth-of-type(2){
+	font-size: 20px;
+	opacity: 0.9;
+	color: rgb(88, 88, 88);
+	border-radius: 2px;
+	position: relative;
+	left: 215px;
+
+	background-color: rgba(255, 255, 255, 0.7);
+	cursor: pointer;
+
+}
+
+.dots i{
+	font-size: 12px;
+	opacity: 0.6;
+	color: rgb(104, 101, 101);
+	border: 3px solid white;
+	border-radius: 12px;
+	position: relative;
+	cursor: pointer;
+	top: 85%;
+}
+
+.slider-text {
+	width: 500px;
+	height: 400px;
+	display: inline-block;
+	margin-left: -5px;
+	border: 3px solid white;
+	align-items: top;
+	position: relative;
+	bottom: 95px;
+
+}
+
+.box-slider .slider-text h2 {
+	color: rgb(218, 216, 216);
+	text-transform: uppercase;
+	font-weight: lighter;
+	margin-top: 4%;
+}
+
+.box-slider .slider-text p {
+	color: rgb(218, 216, 216);
+	text-transform: none;
+	font-size: 18px;
+	padding: 35px 40px;
+	text-align: left;
+	text-align: justify;
+}
+
+.box-slider .slider-text p > span {
+	text-decoration: underline;
+	color: lightblue;
+}
+
+button {
+	background-color: rgb(137, 206, 229);
+	padding: 10px 10px;
+	border: none;
+}
+
+button:hover{
+	background-color:rgb(58, 120, 141)
+}
+ 
+.box-slider .slider-text a {
+	color: white;
+	font-size: 16px;
+	font-weight: 2px;
+	text-decoration: none;
+	
+}
+
+/*FIM DA SESSÃO PRODUTOS*//*FIM DA SESSÃO PRODUTOS*//*FIM DA SESSÃO PRODUTOS*/
+
+
+
+
+
+
+/*SESSÃO SOBRE*//*SESSÃO SOBRE*//*SESSÃO SOBRE*//*SESSÃO SOBRE*//*SESSÃO SOBRE*/
+.sobre {
+	background-color:#4e4e4e;
+	width: 100%;
+	max-height: 900px;
+	height: 100%;
+	padding-top: 3%;
+}
+
+.sobre h1 {
+	width: 500px;
+	color: white;
+	font-size: 80px;
+	text-transform: uppercase;
+	font-weight: lighter;
+	margin-bottom: 2%;
+	margin-top: 5%;
+	position: absolute;
+	left: 17%;
+}
+
+.sobre > a > i  {
+	position: relative;
+	top: 30%;
+	left: 21%;
+	color: white;
+	font-size: 75px;
+	padding: 10px 10px;
+}
+
+.about-wraper {
+	width: 85%;
+	height: 650px;
+	margin: 0 auto;
+
+}
+
+.about-text {
+	width: 50%;
+	float:left;
+	text-align: right;
+	color:rgb(199, 197, 197);
+	background-color: black;
+	padding: 10px 2%;
+	position: relative;
+	left: 2px;
+	top: 50%;
+}
+
+.about-pic {
+	width: 50%;
+	height: 100%;
+	float: right;
+	border-radius: 15%;
+
+}
+
+.about-pic figure {
+	background-image: url(../images/helton.jpeg);
+	background-size: cover;
+	background-position:bottom left;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	z-index: 11;
+	border-radius: 1%;
+	border: 1px solid black;
+	box-shadow: 3px 3px 10px black;
+}
+
+/*FIM DA SESSÃO SOBRE*//*FIM DA SESSÃO SOBRE*//*FIM DA SESSÃO SOBRE*/
+
+
+
+/*SESSÃO CONTATO*//*SESSÃO CONTATO*//*SESSÃO CONTATO*//*SESSÃO CONTATO*/
+
+.contato {
+	max-height: 700px;
+	height: 100%;
+	padding: 5% 2%;
+}
+
+.contato h1 {
+	text-transform: uppercase;
+	font-weight: lighter;
+	background-color: black;
+	color: white;
+	max-width: 20%;
+	font-size: 36px;
+	box-shadow: 1px 1px 3px grey;
+}
+
+.contato p {
+	background-color: white;
+	text-transform: uppercase;
+	font-size: 15px;
+	width: 40%;
+	box-shadow: 1px 1px 3px grey;
+	margin-bottom: 10px;
+}
+
+.form {
+	max-width: 1850px;
+	width: 100%;
+	height: 500px;
+	padding: 2px 2px;	
+}
+
+
+.formulario {
+	width: 50%;
+	height: 100%;
+	background-color: rgb(196, 194, 192);
+	float: left;
+	padding-top: 10px;
+	padding-left: 12%;
+	margin-left: 12%;
+	display: flex;
+	flex-direction: column;
+}
+
+.formulario h3 {
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 25px;
+	margin-bottom: 3%;
+	margin-left: 2%;
+	color: white;
+}
+
+.formulario label {
+	font-weight: lighter;
+	font-size: 16px;
+	margin-left: 2%;
+	color: white;
+
+}
+
+.formulario input {
+	width: 65%;
+	padding: 10px 2%;
+	margin: 10px 2%;
+	border: none;
+}
+
+.formulario input[type=submit] {
+	width: 65%;
+	padding: 20px 10%;
+	margin: 10px 2%;
+	color:white;
+	border: 1px solid white;
+	background-color: rgb(29, 29, 28);
+}
+
+.formulario input[type=submit]:hover{
+	background-color: rgb(117, 117, 117);
+}
+
+.WhatsApp {
+	width: 35%;
+	height: 100%;
+	float: right;
+
+}
+
+.WhatsApp i {
+	color:black;
+	font-size: 550px;
+	position: relative;
+	bottom: 5%;
+	left: 1%;
+
+}
+
+/*FIM DA SESSÃO CONTATO*//*FIM DA SESSÃO CONTATO*//*FIM DA SESSÃO CONTATO*/
+
+
+
+
+
+
+
+/*SESSÃO MAPA*//*SESSÃO MAPA*//*SESSÃO MAPA*//*SESSÃO MAPA*//*SESSÃO MAPA*/
+.mapa {
+	height: 230px;
+	width: 100%;
+	background-color: rgb(61, 61, 61);
+}
+
+.mapa h2 {
+	color: white;
+	text-transform: uppercase;
+	font-weight: lighter;
+	text-align: center;
+	padding: 10px 0;
+}
+.map-wraper {
+	width: 400px;
+	margin: 5px auto;
+	text-align: center;
+}
+
+
+/*FIM DA SESSÃO MAPA*//*FIM DA SESSÃO MAPA*//*FIM DA SESSÃO MAPA*//*FIM DA SESSÃO MAPA*/
+
+
+
+
+
+footer {
+	width: 100%;
+	height: 200px;
+	background-color: black;
+}
+
+footer .brand {
+	color: white;
+	position: relative;
+	left:45%;
+	top: 25%;
+}
+
+footer p {
+	width: 400px;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 70%;
+}
+
+
+
+
+@media screen and (max-width: 1360px){
+	.box-slider {
+		padding-top: 2%;
+	}
+
+	.sobre h1 {
+		left: 1%;
+	}
+	
+	.sobre > a > i  {
+		left: 2%;
+	}
+
+	.contato {
+		max-height: 700px;
+		height: 100%;
+	}
+	
+	.form {
+		max-width: 800px;
+		height: 500px;
+		padding: 2px 2px;
+		margin: 0;	
+	}
+	
+	
+	.formulario {
+		width: 50%;
+		height: 100%;
+		background-color: rgb(196, 194, 192);
+		float: left;
+		padding-top: 10px;
+		padding-left: 12%;
+		margin-left: 1%;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 1080px){
+
+	.sobre h1 {
+		position: relative;
+		display: block;
+		text-align: center;
+		margin:0;
+		padding: 0;
+	}
+
+	.about-wraper {
+		margin-top: 0;
+		padding: 0;
+	}
+
+	.sobre h1 {
+		font-size: 65px;
+		width: 500px;
+		margin: 0 auto;
+	}
+	
+	.sobre > a > i  {
+		top: 5%;
+		left: 38%;
+		margin-bottom: 5%;
+	}
+
+	.about-text {
+		display: block;
+		width: 100%;
+		top: 2%;
+		left: 0;
+	}
+	
+	.about-pic {
+		display: block;
+		width: 100%;
+		height: 45%;
+	}
+	.WhatsApp{
+		margin-left: 1%;
+		position: relative;
+		left: -5%;
+	}
+
+	.formulario{
+		margin-right: 1%;
+	}
+	.form {
+		max-width: 800px;
+		height: 500px;
+		padding: 0;
+		margin: 0;	
+	}
+}
+
+
+
+@media screen and (max-width: 1060px){
+	.box{
+		margin: 25px 5px;
+		display: block;
+	}
+
+	.produtos { 
+		height: 975px;
+	}
+	.box-slider {
+		height: 100%;
+		padding-top: 5%;
+		margin-top: 0
+	}
+
+	.slider-wraper {
+		height: 10%;
+	}
+
+	.slider-text {
+		margin: 1px auto 0 auto;
+	}
+
+	.slider-images img {
+		width: 494px;
+	}
+
+	.sobre h1 {
+		font-size: 65px;
+		width: 450px;
+		margin: 0 auto;
+	}
+
+	.WhatsApp{
+		margin-left: 1%;
+		position: relative;
+		left: -12%;
+	}
+
+	footer .brand {
+		left: 41%;
+	}
+}
+
+@media screen and (max-width: 995px){
+	.sobre h1 {
+		font-size: 65px;
+		width: 350px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	.WhatsApp{
+		width: 85%;
+		margin: 0 auto;
+		position: initial;
+		text-align: center;
+	}	
+
+	.formulario {
+		width: 100%;
+		margin: 0 auto 0 5%;
+		padding-left: 25%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.menu {
+		display: none;
+	}
+
+	.menu-mobile {
+		display: block;
+	}
+
+	.call {
+		width: 300px;
+		display: block;
+	}
+
+	.sobre h1 {
+		font-size: 65px;
+		width: 450px;
+		margin: 0 auto;
+	}
+
+	footer .brand {
+		left: 38%;
+	}
+}
+
+@media screen and (max-width: 540px){
+	.produtos { 
+		height: 800px;
+	}
+
+	.box-slider {
+		height: 100%;
+		padding-top: 5%;
+		margin-top: 10%;
+	}
+
+	.slider-wraper {
+		height: 10%;
+	}
+
+	.box-text span {
+		left: 312px;
+	}
+
+	.slider-images{
+		width: 300px;
+		height: 225px;
+	}
+	.slider-images img {
+		width: 294px;
+		height: 220px;
+	}
+
+	.arrows {
+		padding-top: 30%;
+	}
+
+	.dots {
+		position: relative;
+		bottom: 50%;
+	}
+
+	.arrows i:nth-of-type(1){
+		bottom: 110px;
+		right: 120px;
+	}
+
+	.arrows i:nth-of-type(2){
+		bottom: 110px;
+		left: 120px;
+	}
+
+	.slider-text{
+		width: 300px;
+		margin-top: 3%;
+	}
+
+	.sobre h1 {
+		font-size: 65px;
+		width: 400px;
+		margin: 0 auto;
+	}
+
+	.sobre > a > i  {
+		top: 3%;
+		left: 35%;
+		margin-bottom: 5%;
+		font-size: 35px;
+	}
+
+
+	.contato{
+		height: 1200px;
+		margin: 2% auto;
+	}
+
+	.contato h1 {
+		font-size: 20px;
+	}
+
+	.contato p {
+		font-size: 12px;
+	}
+
+	.form {
+		max-width: 1850px;
+		width: 100%;
+		height: 1000px;
+		padding: 2px 2px;
+		margin: 0 auto;
+	}
+	
+	
+	.formulario {
+		width: 100%;
+		height: 500px;
+		padding-top: 10px;
+		padding-left: 15%;
+		margin-left: 0;
+		margin-bottom: 8%;
+	}
+	
+	.formulario h3 {
+		font-size: 25px;
+
+	}
+	
+	.formulario label {
+		font-weight: lighter;
+		font-size: 16px;
+		margin-left: 2%;
+		color: white;
+	
+	}
+	
+	.formulario input {
+		width: 80%;
+		padding: 10px 10%;
+		margin: 10px 2%;
+	}
+
+	.formulario input[type=submit] {
+		width: 80%;
+		padding: 20px 10%;
+		margin: 10px 2%;
+
+	}
+	
+	.WhatsApp {
+		width: 100%;
+		height: 450px;
+		margin-bottom: 2%;
+		margin: 0 auto;
+
+	}
+	
+	.WhatsApp i {
+		font-size: 500px;
+		margin: 0 auto 2% 2%;
+	}
+
+	footer .brand {
+		left: 32%;
+	}
+
+	footer p {
+		position: relative;
+		left: -14%;
+	}
+}
